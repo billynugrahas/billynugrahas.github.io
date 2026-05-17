@@ -1,502 +1,1023 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Billy Nugraha Sutandi's Portfolio</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Boootstrap Portfolio/Resume Theme for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="desktop.ico">  
-    
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-    
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
-    <!-- github activity css -->    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    
-</head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billy Nugraha Sutandi — Senior Robotics Software Engineer</title>
+  <meta name="description" content="Senior Robotics Software Engineer specializing in ROS/ROS 2, autonomous navigation, SLAM, and LiDAR systems. 5+ years deploying robots across 7 countries.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0a'/%3E%3Cpath d='M8 10l5 6-5 6' stroke='%2300ff00' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cline x1='16' y1='22' x2='24' y2='22' stroke='%2300ff00' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: { 900: '#0a0a0a', 800: '#111111', 700: '#1a1a1a', 600: '#1e1e1e', 500: '#2a2a2a', 400: '#333333', 300: '#444444' },
+            neon: '#00ff00',
+            cyan: '#00d7ff',
+            txt: '#e6e6e6',
+            txtmuted: '#999999',
+          },
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+            mono: ['Space Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::selection { background: #00ff00; color: #0a0a0a; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0a0a0a; }
+    ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #00ff00; }
+    html { scroll-behavior: smooth; }
 
-<body>
-    <!-- ******HEADER****** --> 
-    <header class="header">
-        <div class="container clearfix">                       
-            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profile.png" alt="profile image" />
-            <div class="profile-content float-left">
-                <h1 class="name">Billy Nugraha Sutandi</h1>
-                <h2 class="desc">Robotics Software Engineer (LiDAR Engineer) | Robotics & Autonomous Systems Enthusiast | ROS and C++ Developer | Mechatronics Engineer</h2>   
-                <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="https://twitter.com/xbillynugraha/"><i class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/billy-nugraha-s/"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/billynugrahas"><i class="fab fa-github-alt"></i></a></li>  
-                    <li class="list-inline-item"><a href="https://www.instagram.com/billynugrahas/"><i class="fab fa-instagram"></i></a></li>
-                </ul> 
-            </div><!--//profile-->
-            <a class="btn btn-cta-primary float-right" href="https://www.linkedin.com/in/billy-nugraha-s/" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>              
-        </div><!--//container-->
-    </header><!--//header-->
-    
-    <div class="container sections-wrapper">
-        <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">About</h2>
-                        <div class="content">
-                            <p>A mechatronics engineer, highly interested in robotics and all other things related to robotics (mechanical designing / 3D modeling, electronic circuit designing, programming both firmware and software for robotics development). </p>
-                            <p>I focused my studies on Robotics practically (experienced in robotics research teams and freelance projects) and theoretically (by studying many courses in Robotics). </p>
-                            <p>Experience in Robotics (Legged and Wheeled Robots), ROS, Modern C++, Python, and Autonomous Navigation and Control using ROS Navigation Stack for Legged and Wheeled Robots.</p>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-    
-               <section class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Projects</h2>
-                        <div class="content">    
-                                               
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="https://widya.ai/load-scanner/" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/billy-wls.jpg" alt="project name" width="300" 
-                                    height="400" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3"><a href="" target="_blank">Widya Load Scanner </a></h3>
-                                <div class="desc text-left">      
-                                    <p>Widya Load Scanner Portable is a practical measurement technology using LiDAR technology so it could provide an accuracy of up to 98,5% in measuring the volume.</p>                                        
-                                    <p>The result can be directly monitored on the dashboard in real-time.  </p>                                        
-                                    <p>Widya Load Scanner Portable provides a fast, precise, and accurate solution in calculating material volumes. </p>    
-                                    <p>Tech Stacks: ROS, PCL, vue.js, redis, mqtt, Modern C++, Python</p>                                        
-                                    <p><a class="more-link" href="https://widya.ai/load-scanner/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>      
-                                </div> <!--//desc-->  
-                            </div><!--//item-->
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    .cursor-blink { animation: blink 1s step-end infinite; }
 
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:6957946442044899328/" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/uav-lidar-building.jpg" alt="project name"/>
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3"><a href="" target="_blank">Point Cloud Processing Software</a></h3>
-                                <div class="desc text-left">      
-                                    <p>Point Cloud Processing software to crop, remove tree, cut n fill, and building simulation on the pointcloud data from LiDAR.</p>                                        
-                                    <p>The result can be directly monitored on the dashboard in real-time.  </p>
-                                    <p>Tech Stacks: ROS, PCL, vue.js, redis, mqtt, Modern C++, Python</p>                                        
-                                    <p><a class="more-link" href="https://www.linkedin.com/feed/update/urn:li:activity:6957946442044899328/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>      
-                                </div> <!--//desc-->  
-                            </div><!--//item-->
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.6s ease-out forwards; }
+    .fade-up-delay-1 { animation-delay: 0.1s; opacity: 0; }
+    .fade-up-delay-2 { animation-delay: 0.2s; opacity: 0; }
+    .fade-up-delay-3 { animation-delay: 0.3s; opacity: 0; }
+    .fade-up-delay-4 { animation-delay: 0.4s; opacity: 0; }
 
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="https://github.com/billynugrahas/oped_quadruped" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Oped Quadruped.JPG" alt="project name" />
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Oped Quadruped 2.png" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3"><a href="" target="_blank">Oped - Quadruped Robot</a></h3>
-                                <div class="desc text-left">             
-                                    <p>Bachelor thesis:</p>                       
-                                    <p>OPED is open source development framework for mammal-type quadruped robot using Dynamixel AX-12/AX-18 series. This framework is based on <a href="https://github.com/chvmp/champ"><em>champ controller library</em></a>.</p>                                        
-                                    <p>This quadruped can be able to move and control both manually and autonomously.</p>                                        
-                                    <p>SOLIDWORKS (Mechanical Design) - Autodesk Eagle (PCB Design) - C++11 and Python (Programmming) - Ubuntu and ROS (frameworks)</p>    
-                                    <p>Raspberry Pi 4, 12 x Dynamixel AX-12A, RPLIDAR A1M8, U2D2</p>                                        
-                                    <p><a class="more-link" href="https://github.com/billynugrahas/oped_quadruped" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>      
-                                </div> <!--//desc-->  
-                            </div><!--//item-->
-                                
-                            <hr class="divider" />
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="https://github.com/billynugrahas/oped_quadruped" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Oped Quadruped.JPG" alt="project name" />
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Oped Quadruped 2.png" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3"><a href="" target="_blank">Oped - Quadruped Robot</a></h3>
-                                <div class="desc text-left">             
-                                    <p>Bachelor thesis:</p>                       
-                                    <p>OPED is open source development framework for mammal-type quadruped robot using Dynamixel AX-12/AX-18 series. This framework is based on <a href="https://github.com/chvmp/champ"><em>champ controller library</em></a>.</p>                                        
-                                    <p>This quadruped can be able to move and control both manually and autonomously.</p>                                        
-                                    <p>SOLIDWORKS (Mechanical Design) - Autodesk Eagle (PCB Design) - C++11 and Python (Programmming) - Ubuntu and ROS (frameworks)</p>    
-                                    <p>Raspberry Pi 4, 12 x Dynamixel AX-12A, RPLIDAR A1M8, U2D2</p>                                        
-                                    <p><a class="more-link" href="https://github.com/billynugrahas/oped_quadruped" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>      
-                                </div> <!--//desc-->  
-                            </div><!--//item-->
+    @keyframes scanline {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(100vh); }
+    }
+    .scanline {
+      background: linear-gradient(transparent, rgba(0,255,0,0.03), transparent);
+      height: 100px;
+      animation: scanline 8s linear infinite;
+      pointer-events: none;
+    }
 
-                            <hr class="divider" />
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Neo.png" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3"><a href="" target="_blank">Two Wheeled Robot</a></h3>
-                                <div class="desc text-left">
-                                    <p class="mb-2">This two wheeled robot can be able to move autonomously and controlled using keyboard/joystick.</p>
-                                    <p class="mb-2">Using Raspberry Pi 3, Robot Operating System, Arduino mega, L298N Motor Driver, Motor DC 12V and Motor Encoder.</p>
-                                </div><!--//desc-->  
-                            </div><!--//item-->
-                                
-                            <hr class="divider" />
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Robot-covid.jpeg" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3"><a href="" target="_blank">Autonomous Service Robot</a></h3>
-                                <div class="desc text-left">
-                                    <p class="mb-2">Autonomous service robot that aims to stem the spread of the coronavirus in hospitals. </p>
-                                    <p class="mb-2">Using Robot Operating System(ROS), Raspberry Pi 4, BTS7960 Driver Motor, Arduino Due, Motor DC PG45 and Motor Encoder.</p>
-                                </div><!--//desc-->  
-                            </div><!--//item-->
+    @keyframes glowPulse {
+      0%, 100% { box-shadow: 0 0 5px rgba(0,255,0,0.3), 0 0 10px rgba(0,255,0,0.1); }
+      50% { box-shadow: 0 0 15px rgba(0,255,0,0.5), 0 0 30px rgba(0,255,0,0.2); }
+    }
+    .glow-pulse { animation: glowPulse 3s ease-in-out infinite; }
 
-                            <hr class="divider" />
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="https://www.youtube.com/watch?v=AZ3y_IbAVVI" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Karen.png" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3"><a href="https://www.youtube.com/watch?v=AZ3y_IbAVVI" target="_blank">Karen - Plankton's Wife Robot</a></h3>
-                                <div class="desc text-left">                                    
-                                    <p class="mb-2">Collaborate with youtube content creator, controlled using Bluetooth.</p>
-                                    <p class="mb-2">Microcontroller, BTS7960, Motor DC (for wheelchair), Bluetooth HC-05</p>
-                                    <p><a class="more-link" href="https://www.youtube.com/watch?v=AZ3y_IbAVVI" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>      
-                                </div><!--//desc-->  
-                            </div><!--//item-->
-                           
-                            <hr class="divider" />
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Alfatih.PNG" alt="project name" />
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Alfatih-2.jpg" alt="project name" />
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Alfatih-3.jpeg" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3"><a href="https://gmrt.ugm.ac.id/robotic-team/tim-krpai/" target="_blank">Al-Fatih - Firefighting Hexapod Robot</a></h3>
-                                <div class="desc text-left">                                    
-                                    <p class="mb-2">Firefighting hexapod robot to accomplish a mission, to extinguish a fire and rescue a victim on a maze for competition. </p>
-                                    <p class="mb-2">Teensy 3.5, Sensor Ultrasonic SRF05, IR Distance Sensor (SHARPGP), Fire Detector Sensors (UV-Tron and Photodiode), Servo HS-7955TG High Torque. </p>
-                                    <p><a class="more-link" href="https://gmrt.ugm.ac.id/robotic-team/tim-krpai/"></i>Find out more</a></p>      
-                                </div><!--//desc-->  
-                            </div><!--//item-->
-                                
-                            <hr class="divider" />
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/ARMOS.jpeg" alt="project name" />
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/ARMOS-Data-1.jpeg" alt="project name" />
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/ARMOS-Data-2.jpeg" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3"><a href="" target="_blank">ARMOS (Automatic Rain Water Sampling and Real Time Monitoring System)</a></h3>
-                                <div class="desc text-left">                                    
-                                    <p class="mb-2">Automatic rain water sampler (ARWS) clone with additional features - system that used to collect the rainwater samples and other environment information (air quality, temperature, and humidity) with a low cost budget (as cheap as possible).</p>      
-                                    <p class="mb-2">IoT - ESP32, SHARP GP Dust Sensor, Servo as actuator, Bootstrap as Frontend and JS as backend. </p>      
-                                </div><!--//desc-->  
-                            </div><!--//item-->
-				    
-			                <hr class="divider" />
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Balancing-Robot.jpg" alt="project name" />
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Balancing-Robot-2.jpg" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3"><a href="" target="_blank">Two Wheeled Balancing Robot</a></h3>
-                                <div class="desc text-left">                                    
-                                    <p class="mb-2">Using IMU sensor for stabilizing robot and using Full State Feedback Control Algorithm as a Control System</p>      
-                                </div><!--//desc-->  
-                            </div><!--//item-->
-				    
-			                <hr class="divider" />
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Quadruped-Spider-Robot.png" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3"><a href="" target="_blank">Spider-Type Quadruped Robot</a></h3>
-                                <div class="desc text-left">                                    
-                                    <p class="mb-2">WIP - Work In Progress</p>      
-                                </div><!--//desc-->  
-                            </div><!--//item-->
+    .grid-overlay {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
 
-			                <hr class="divider" />
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Robotic-Arm-Balancing-Robot.jpg" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3"><a href="" target="_blank">6 DOF Robotic Arm Robot</a></h3>
-                                <div class="desc text-left">                                    
-                                    <p class="mb-2">WIP - Work In Progress</p>      
-                                </div><!--//desc-->  
-                            </div><!--//item-->
-                                                   
+    .tag-btn.active { background: #00ff00; color: #0a0a0a; }
 
-			                <hr class="divider" />
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Niagraha.jpeg" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3"><a href="http://niagraha.com/" target="_blank">Another Low-cost Wheeled Robots</a></h3>
-                                <div class="desc text-left">                                    
-                                    <p class="mb-2">Tokopedia : Niagraha Tech</p>      
-                                </div><!--//desc-->  
-                            </div><!--//item-->
-                                                           
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                
-                <section class="awards section">
-                    <div class="section-inner shadow-sm rounded">
-                    <div class="content">
-                        <h2 class="heading">Honors & Awards</h2>
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="https://gmrt.ugm.ac.id/prestasi/" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Juara-KRI-Nasional.jpg" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3">Juara Harapan 1 Kontes Robot Pemadam Api Indonesia tingkat Nasional</h3>
-                            </div>
+    .project-modal-body h2 { font-size: 1.5rem; font-weight: 700; color: #e6e6e6; margin: 1.5rem 0 0.75rem; }
+    .project-modal-body h3 { font-size: 1.2rem; font-weight: 600; color: #e6e6e6; margin: 1.25rem 0 0.5rem; }
+    .project-modal-body p { color: #ccc; line-height: 1.8; margin-bottom: 1rem; }
+    .project-modal-body ul { list-style: none; padding-left: 1.25rem; margin-bottom: 1rem; }
+    .project-modal-body ul li { position: relative; color: #ccc; line-height: 1.8; }
+    .project-modal-body ul li::before { content: '\25B8'; position: absolute; left: -1.25rem; color: #00ff00; }
+    .project-modal-body a { color: #00d7ff; text-decoration: underline; text-underline-offset: 3px; }
+    .project-modal-body a:hover { color: #00ff00; }
+  </style>
+</head>
+<body class="bg-dark-900 text-txt font-sans">
 
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <a href="https://ugm.ac.id/id/berita/16047-ugm-juara-umum-kri-regional-3#:~:text=Tim%20Robot%20UGM%20sukses%20meraih,2018%20di%20Universitas%20PGRI%20Semarang." target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Juara-KRI-Regional.jpeg" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3">Juara 2 dan Strategi Terbaik Kontes Robot Pemadam Api Indonesia tingkat Regional III</h3>
-                            </div>
+  <!-- Noise Texture -->
+  <div class="fixed inset-0 pointer-events-none z-[100] opacity-[0.02]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 256 256%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence baseFrequency=%220.9%22 numOctaves=%224%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22/%3E%3C/svg%3E');"></div>
 
-                        </div><!--//content--> 
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                <section class="experience section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Robotics Application Engineer - <span class="place"><a href="http://movel.ai/">Movel AI</a></span> <span class="year">(Aug 2022 - Present)</span></h3>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Robotics Software Engineer - <span class="place"><a href="http://widya.ai/">PT. Widya Inovasi Indonesia</a></span> <span class="year">(Dec 2020 - Jul 2022)</span></h3>
-                                <p>Developing Load Volume Scanner (LVS) and Developing Point Cloud Processing Software: using Robot Operating System and C++11/C++14 language</p>
-                            </div><!--//item-->
-                            
-                            <div class="item">
-                                <h3 class="title">Research And Development Engineer - <span class="place"><a href="https://www.instagram.com/relinkplastics/">Re-link Plastics</a></span> <span class="year">(Feb 2019 - Sep 2019)</span></h3>
-                                <p>Developed electronics circuit board and programmed microcontroller to automate sorting systems machine.</p>
-                            </div><!--//item-->
+  <!-- Scanline -->
+  <div class="fixed inset-0 pointer-events-none z-[99] overflow-hidden">
+    <div class="scanline absolute inset-x-0"></div>
+  </div>
 
-                            <div class="item">
-                                <h3 class="title">Instrummentation Engineer Intern - <span class="place"><a href="http://www.staklimyogyakarta.com/">Badan Meteorologi, Klimatologi, dan Geofisika</a></span> <span class="year">(Jan 2019 - Apr 2019)</span></h3>
-                                <p>Developed ARMOS (Automatic Rain Water Sampling and Real Time Monitoring System).</p>
-                            </div><!--//item-->
+  <!-- Grid Overlay -->
+  <div class="fixed inset-0 pointer-events-none z-0 grid-overlay opacity-50"></div>
 
-                        </div><!--//content--> 
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                <section class="github section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">My GitHub</h2>
-                        <p>This is my Github Calendar and Activity. 
-                        
-                        <div id="github-graph" class="github-graph">
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background: rgba(10,10,10,0.85); backdrop-filter: blur(12px);">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-2 group">
+        <div class="w-8 h-8 rounded-lg bg-neon flex items-center justify-center glow-pulse">
+          <i data-lucide="terminal" class="w-4 h-4 text-dark-900" style="stroke-width:2.5"></i>
+        </div>
+        <span class="text-xl font-bold tracking-tight text-txt">billynugrahas<span class="text-neon">.github.io</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#about" class="text-sm font-medium text-txtmuted hover:text-neon transition-colors duration-300">About</a>
+        <a href="#projects" class="text-sm font-medium text-txtmuted hover:text-neon transition-colors duration-300">Projects</a>
+        <a href="#experience" class="text-sm font-medium text-txtmuted hover:text-neon transition-colors duration-300">Experience</a>
+        <a href="#skills" class="text-sm font-medium text-txtmuted hover:text-neon transition-colors duration-300">Skills</a>
+        <a href="#contact" class="text-sm font-medium text-txtmuted hover:text-neon transition-colors duration-300">Contact</a>
+      </div>
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-dark-500 transition-colors">
+        <i data-lucide="menu" class="w-5 h-5 text-txtmuted"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-dark-400">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="#about" class="text-sm font-medium text-txtmuted hover:text-neon py-2 mobile-link">About</a>
+        <a href="#projects" class="text-sm font-medium text-txtmuted hover:text-neon py-2 mobile-link">Projects</a>
+        <a href="#experience" class="text-sm font-medium text-txtmuted hover:text-neon py-2 mobile-link">Experience</a>
+        <a href="#skills" class="text-sm font-medium text-txtmuted hover:text-neon py-2 mobile-link">Skills</a>
+        <a href="#contact" class="text-sm font-medium text-txtmuted hover:text-neon py-2 mobile-link">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-                        </div><!--//github-graph-->
-                       
-                        <div id="ghfeed" class="ghfeed">
-                        </div><!--//ghfeed-->
-                        
-                    </div><!--//secton-inner-->
-                </section><!--//section-->
-            </div><!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                 <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Sumedang, West Java, Indonesia</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">billy.nugraha.s@gmail.com</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://billynugrahas.github.io/</a></li>
-                            </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-                
-                <aside class="skills aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Skills</h2>
-                        <div class="content">
-                            
-                            <ul class="list-styled">
-                                
-					    
-				<li class="item">
-                                    <span class="level">Experience in</span>
-                                    <span class="title"><strong>Robotics</strong></span>
-                                </li><!--//item-->
-        
-                <li class="item">
-                                    <span class="level">Experience in</span>
-                                    <span class="title"><strong>Artificial Intelligence</strong></span>
-                                </li><!--//item-->
-        
-                <li class="item">
-                                    <span class="level">Experience in</span>
-                                    <span class="title"><strong>Mechatronics</strong></span>
-                                </li><!--//item-->
-        
-                <li class="item">
-                                    <span class="level">Experience with</span>
-                                    <span class="title"><strong>Robot Operating System (ROS)</strong></span>
-                                </li><!--//item-->
+  <!-- HERO -->
+  <section id="hero" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <div class="absolute top-1/4 -right-20 w-64 h-64 bg-neon/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 -left-20 w-48 h-48 bg-cyan/5 rounded-full blur-3xl"></div>
 
-				<li class="item">
-                                    <span class="level">Experience with</span>
-                                    <span class="title"><strong>Modern C++</strong></span>
-                                </li><!--//item-->
+    <div class="max-w-6xl mx-auto px-6 w-full relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-8">
+          <div class="fade-up">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-dark-400 bg-dark-700/50 mb-6">
+              <span class="w-2 h-2 rounded-full bg-neon animate-pulse"></span>
+              <span class="text-xs font-mono text-neon">Open to opportunities</span>
+            </div>
+          </div>
 
-				<li class="item">
-                    <span class="level">Experience with</span>
-                    <span class="title"><strong>SOLIDWORKS</strong></span>
-                </li><!--//item-->
-					    
-				<li class="item">
-                                    <span class="level">Experience with</span>
-                                    <span class="title"><strong>Python</strong></span>
-                                </li><!--//item-->
-					    
-				<li class="item">
-                                    <span class="level">Experience with</span>
-                                    <span class="title"><strong>Matlab</strong></span>
-                                </li><!--//item-->
-					    
-				<li class="item">
-                                    <span class="level">Good understanding and skills for</span>
-                                    <span class="title"><strong>Eagle PCB Design</strong></span>
-                                </li><!--//item-->
-				    
-				 <li class="item">
-                                    <span class="level">Good understanding and skills for</span>
-                                    <span class="title"><strong>Object-Oriented Programming</strong></span>
-                                </li><!--//item-->
-					    
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-		    
-                <aside class="education aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> B.Sc. (Bachelor of Science)</h3>
-                                <h4 class="university">Universitas Gadjah Mada <span class="year">(2016-2020)</span> <span class="gpa">GPA: 3.74/4.00</span></h4>
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tighter fade-up fade-up-delay-1">
+            <span class="text-txt">Hi, I'm </span>
+            <span class="bg-gradient-to-r from-neon to-cyan bg-clip-text text-transparent">Billy</span>
+            <br>
+            <span class="text-txt">I build</span>
+            <br>
+            <span id="typed-text" class="text-neon font-mono text-3xl md:text-5xl lg:text-6xl"></span>
+            <span class="cursor-blink text-neon font-mono text-3xl md:text-5xl lg:text-6xl">|</span>
+          </h1>
 
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                            
-                <aside class="languages aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-styled"> 
-                                <li class="item">
-                                    <span class="title"><strong>Bahasa:</strong></span>
-                                    <span class="level">Native</span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Professional Working Proficiency</span>
-                                </li><!--//item-->
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                              
-            </div><!--//secondary-->    
-        </div><!--//row-->
-    </div><!--//masonry-->
-    
-    <!-- ******FOOTER****** --> 
-    <footer class="footer">
-        <div class="container text-center">
-                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+          <p class="text-lg text-txtmuted leading-relaxed max-w-xl fade-up fade-up-delay-2">
+            Senior Robotics Software Engineer with 5+ years deploying autonomous navigation systems for 40+ robots across 7 countries. Specializing in ROS/ROS 2, SLAM, and production-grade robot deployments.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 fade-up fade-up-delay-3">
+            <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3.5 bg-neon text-dark-900 font-semibold rounded-xl hover:shadow-[0_0_25px_rgba(0,255,0,0.3)] transition-all duration-300">
+              <i data-lucide="folder-open" class="w-4 h-4"></i>
+              View Projects
+            </a>
+            <a href="#experience" class="inline-flex items-center gap-2 px-6 py-3.5 border border-dark-400 text-txt rounded-xl hover:border-neon hover:text-neon transition-all duration-300">
+              <i data-lucide="briefcase" class="w-4 h-4"></i>
+              Experience
+            </a>
+          </div>
+
+          <div class="flex items-center gap-6 pt-2 fade-up fade-up-delay-4">
+            <a href="https://github.com/billynugrahas" class="text-txtmuted hover:text-neon transition-colors" title="GitHub" target="_blank">
+              <i data-lucide="github" class="w-5 h-5"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/billy-nugraha-s/" class="text-txtmuted hover:text-cyan transition-colors" title="LinkedIn" target="_blank">
+              <i data-lucide="linkedin" class="w-5 h-5"></i>
+            </a>
+            <a href="mailto:billy.nugraha.s@gmail.com" class="text-txtmuted hover:text-neon transition-colors" title="Email">
+              <i data-lucide="mail" class="w-5 h-5"></i>
+            </a>
+            <div class="h-5 w-px bg-dark-400"></div>
+            <span class="text-xs font-mono text-txtmuted">Indonesia</span>
+          </div>
+        </div>
+
+        <!-- Right - Terminal Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-dark-800 border border-dark-400 rounded-2xl overflow-hidden shadow-2xl">
+            <div class="flex items-center gap-2 px-4 py-3 bg-dark-700 border-b border-dark-400">
+              <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+              <span class="ml-2 text-xs font-mono text-txtmuted">~/billy-nugraha</span>
+            </div>
+            <div class="p-5 font-mono text-sm leading-7 space-y-1">
+              <p><span class="text-neon">$</span> <span class="text-txt">ros2 service call /get_profile_info billy_msgs/srv/GetProfileInfo</span></p>
+              <p class="text-txtmuted">waiting for service to become available...</p>
+              <p class="text-txtmuted">requester: making request: <span class="text-neon">{}</span></p>
+              <p class="text-txtmuted"></p>
+              <p class="text-txtmuted">response:</p>
+              <p class="pl-4"><span class="text-cyan">name</span>: <span class="text-neon">"Billy Nugraha Sutandi"</span></p>
+              <p class="pl-4"><span class="text-cyan">role</span>: <span class="text-neon">"Sr. Robotics Software Engineer"</span></p>
+              <p class="pl-4"><span class="text-cyan">location</span>: <span class="text-neon">"Indonesia"</span></p>
+              <p class="pl-4"><span class="text-cyan">experience</span>: <span class="text-neon">"5+ years"</span></p>
+              <p class="pl-4"><span class="text-cyan">robots_deployed</span>: <span class="text-neon">"40+"</span></p>
+              <p class="pl-4"><span class="text-cyan">countries</span>: <span class="text-neon">"7+"</span></p>
+              <p class="pl-4"><span class="text-cyan">stack</span>: [<span class="text-neon">"ROS"</span>, <span class="text-neon">"ROS2"</span>, <span class="text-neon">"C++"</span>, <span class="text-neon">"Python"</span>, <span class="text-neon">"SLAM"</span>, <span class="text-neon">"Navigation"</span>]</p>
+              <p class="mt-2"><span class="text-neon">$</span> <span class="cursor-blink">&#9612;</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="relative py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-4 space-y-6">
+          <div class="relative">
+            <img src="assets/images/profile.png" alt="Billy Nugraha Sutandi" class="w-full rounded-2xl border border-dark-400 object-cover aspect-[4/5]">
+            <div class="absolute -bottom-3 -right-3 px-4 py-2 bg-neon text-dark-900 rounded-xl font-mono text-xs font-bold">
+              <span class="mr-1">></span> 5 yrs exp
+            </div>
+          </div>
+
+          <!-- Quick Stats -->
+          <div class="bg-dark-700 border border-dark-400 rounded-2xl p-6">
+            <h3 class="text-sm font-bold text-neon font-mono uppercase tracking-wider mb-4">Deployment Stats</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <div class="text-2xl font-bold text-neon">40+</div>
+                <div class="text-[10px] text-txtmuted font-mono">Robots Deployed</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-cyan">18+</div>
+                <div class="text-[10px] text-txtmuted font-mono">Clients Worldwide</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-neon">7+</div>
+                <div class="text-[10px] text-txtmuted font-mono">Robot Platforms</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-cyan">7</div>
+                <div class="text-[10px] text-txtmuted font-mono">Countries</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-8 space-y-8">
+          <div>
+            <span class="text-xs font-mono text-neon uppercase tracking-widest">// About Me</span>
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-3">Building <span class="text-cyan">autonomous systems</span>, one deployment at a time.</h2>
+          </div>
+
+          <div class="space-y-4 text-txtmuted leading-relaxed">
+            <p>I'm a <span class="text-neon font-medium">Senior Robotics Software Engineer</span> with deep expertise in ROS/ROS 2, SLAM, localization, and autonomous navigation. I design and deploy production-grade navigation systems for mobile robots across diverse platforms.</p>
+            <p>Currently at <span class="text-cyan font-medium">Movel AI</span>, I lead the Robot Navigation System development and have deployed solutions to 40+ robots spanning autonomous forklifts, mecanum-wheeled robots, swerve drives, quadruped/legged robots, differential drive variants, and UV disinfection robots.</p>
+            <p>Previously at <span class="text-cyan font-medium">Widya Robotics</span>, I built LiDAR-based load measurement systems and 3D point cloud processing pipelines. I hold a B.Sc. in Electronics & Instrumentation Engineering from Universitas Gadjah Mada.</p>
+          </div>
+
+          <!-- Education -->
+          <div class="space-y-4">
+            <h3 class="text-sm font-bold text-neon font-mono uppercase tracking-wider">Education</h3>
+            <div class="flex gap-4 items-start p-4 bg-dark-700 border border-dark-400 rounded-xl hover:border-neon/30 transition-colors duration-300">
+              <div class="p-2 rounded-lg bg-neon/10 shrink-0">
+                <i data-lucide="graduation-cap" class="w-4 h-4 text-neon"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                  <h4 class="text-sm font-bold text-txt">B.Sc. Electronics & Instrumentation Engineering</h4>
+                  <span class="text-xs font-mono text-txtmuted">2016 - 2020</span>
+                </div>
+                <p class="text-xs text-txtmuted mt-1">Universitas Gadjah Mada (UGM) &middot; GPA: 3.74/4.00</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Awards -->
+          <div class="space-y-4">
+            <h3 class="text-sm font-bold text-cyan font-mono uppercase tracking-wider">Honors & Awards</h3>
+            <div class="space-y-3">
+              <div class="flex gap-4 items-start p-4 bg-dark-700 border border-dark-400 rounded-xl hover:border-cyan/30 transition-colors duration-300">
+                <div class="p-2 rounded-lg bg-cyan/10 shrink-0">
+                  <i data-lucide="trophy" class="w-4 h-4 text-cyan"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="text-sm font-bold text-txt">Best Strategy & 2nd Place</h4>
+                  <p class="text-xs text-txtmuted mt-1">Regional Autonomous Firefighting Robot Competition (KRI)</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start p-4 bg-dark-700 border border-dark-400 rounded-xl hover:border-neon/30 transition-colors duration-300">
+                <div class="p-2 rounded-lg bg-neon/10 shrink-0">
+                  <i data-lucide="award" class="w-4 h-4 text-neon"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="text-sm font-bold text-txt">4th Place Nationally</h4>
+                  <p class="text-xs text-txtmuted mt-1">National Autonomous Firefighting Legged Robot Competition (KRI 2018)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="relative py-24">
+    <div class="absolute inset-0 bg-gradient-to-b from-dark-900 via-dark-800 to-dark-900"></div>
+    <div class="max-w-6xl mx-auto px-6 relative z-10">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+        <div>
+          <span class="text-xs font-mono text-neon uppercase tracking-widest">// Portfolio</span>
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-3">Featured <span class="text-cyan">Projects</span></h2>
+          <p class="text-txtmuted mt-2">Robotics projects from autonomous navigation to LiDAR systems and everything in between.</p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <button class="tag-btn active px-4 py-1.5 rounded-full text-xs font-semibold border border-dark-400 transition-all duration-300" data-tag="all">All</button>
+          <button class="tag-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-dark-400 text-txtmuted hover:text-neon hover:border-neon transition-all duration-300" data-tag="navigation">Navigation</button>
+          <button class="tag-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-dark-400 text-txtmuted hover:text-neon hover:border-neon transition-all duration-300" data-tag="lidar">LiDAR</button>
+          <button class="tag-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-dark-400 text-txtmuted hover:text-neon hover:border-neon transition-all duration-300" data-tag="hardware">Hardware</button>
+          <button class="tag-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-dark-400 text-txtmuted hover:text-neon hover:border-neon transition-all duration-300" data-tag="competition">Competition</button>
+        </div>
+      </div>
+
+      <div id="projectsGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Project 1: Movel AI RNS -->
+        <article class="project-card group relative bg-dark-700 border border-dark-400 rounded-2xl overflow-hidden hover:border-neon/40 transition-all duration-500 cursor-pointer" data-tags="navigation" onclick="openProject(this)">
+          <div class="relative overflow-hidden">
+            <img src="assets/images/projects/Robot-covid.jpeg" alt="Autonomous Robot Navigation" class="w-full h-56 object-contain bg-dark-600 group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-700 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 px-2.5 py-1 bg-neon/20 text-neon text-[10px] font-mono font-bold uppercase rounded-md backdrop-blur-sm border border-neon/30">Navigation</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="flex items-center gap-3 text-xs text-txtmuted font-mono">
+              <span>2022 - Present</span>
+              <span>&middot;</span>
+              <span>Movel AI</span>
+            </div>
+            <h3 class="text-lg font-bold text-txt group-hover:text-neon transition-colors duration-300 leading-snug">Multi-Robot Fleet Navigation System</h3>
+            <p class="text-sm text-txtmuted leading-relaxed line-clamp-2">Deployed autonomous navigation to 40+ robots across 18+ clients. 7+ platform types including forklifts, mecanum, swerve drive, and legged robots.</p>
+            <div class="flex items-center gap-2 pt-2">
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">ROS 2</span>
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">Nav2</span>
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">SLAM</span>
+            </div>
+          </div>
+          <div class="hidden project-source">
+            <h2>Multi-Robot Fleet Navigation System</h2>
+            <p>As the primary technical lead for Robot Navigation System (RNS) development at Movel AI, I architected and maintained the full navigation stack on ROS 2, integrating with the Fleet Management System for multi-robot coordination.</p>
+            <h3>Key Achievements</h3>
+            <ul>
+              <li>Deployed to 40+ robots across 18+ clients in 7+ countries</li>
+              <li>7+ robot platform types: autonomous forklifts, mecanum-wheeled, swerve drive, quadruped/legged, differential drive variants, UV disinfection</li>
+              <li>Security patrolling with up to 500 m&sup2; map coverage and scheduled patrol cycles</li>
+              <li>Speed profiles up to 1.2 m/s with tuned costmaps and sensor fusion</li>
+            </ul>
+            <h3>Complex Integrations</h3>
+            <ul>
+              <li>QR-based docking systems</li>
+              <li>PLC peripheral control (speakers, indicators, lifting mechanisms)</li>
+              <li>Drone-robot collaboration for warehouse monitoring</li>
+              <li>Coverage-path cleaning with dynamic re-routing</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 2: Widya Load Scanner -->
+        <article class="project-card group relative bg-dark-700 border border-dark-400 rounded-2xl overflow-hidden hover:border-cyan/40 transition-all duration-500 cursor-pointer" data-tags="lidar" onclick="openProject(this)">
+          <div class="relative overflow-hidden">
+            <img src="assets/images/projects/billy-wls.jpg" alt="Widya Load Scanner" class="w-full h-56 object-cover bg-dark-600 group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-700 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 px-2.5 py-1 bg-cyan/20 text-cyan text-[10px] font-mono font-bold uppercase rounded-md backdrop-blur-sm border border-cyan/30">LiDAR</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="flex items-center gap-3 text-xs text-txtmuted font-mono">
+              <span>2020 - 2022</span>
+              <span>&middot;</span>
+              <span>Widya Robotics</span>
+            </div>
+            <h3 class="text-lg font-bold text-txt group-hover:text-cyan transition-colors duration-300 leading-snug">Widya Load Scanner</h3>
+            <p class="text-sm text-txtmuted leading-relaxed line-clamp-2">Industrial load measurement system using 2D LiDAR for 98.5% accuracy volume estimation in logistics. Real-time dashboard monitoring.</p>
+            <div class="flex items-center gap-2 pt-2">
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">ROS</span>
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">PCL</span>
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">C++</span>
+            </div>
+          </div>
+          <div class="hidden project-source">
+            <h2>Widya Load Scanner</h2>
+            <p>Widya Load Scanner Portable is a practical measurement technology using LiDAR that provides accuracy of up to 98.5% in measuring load volume. The result can be directly monitored on the dashboard in real-time.</p>
+            <h3>My Contributions</h3>
+            <ul>
+              <li>Owned the full software stack from low-level sensor drivers to application-level data output</li>
+              <li>Built 3D LiDAR point cloud processing pipeline covering volume calculation, noise/tree removal, and cut-and-fill terrain analysis using PCL</li>
+              <li>Real-time dashboard integration using Vue.js, Redis, and MQTT</li>
+            </ul>
+            <h3>Tech Stack</h3>
+            <p>ROS, PCL, Vue.js, Redis, MQTT, Modern C++, Python</p>
+            <p><a href="https://widya.ai/load-scanner/" target="_blank">Learn more about Widya Load Scanner &rarr;</a></p>
+          </div>
+        </article>
+
+        <!-- Project 3: Point Cloud Processing -->
+        <article class="project-card group relative bg-dark-700 border border-dark-400 rounded-2xl overflow-hidden hover:border-neon/40 transition-all duration-500 cursor-pointer" data-tags="lidar" onclick="openProject(this)">
+          <div class="relative overflow-hidden">
+            <img src="assets/images/projects/uav-lidar-building.jpg" alt="Point Cloud Processing" class="w-full h-56 object-contain bg-dark-600 group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-700 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 px-2.5 py-1 bg-neon/20 text-neon text-[10px] font-mono font-bold uppercase rounded-md backdrop-blur-sm border border-neon/30">LiDAR</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="flex items-center gap-3 text-xs text-txtmuted font-mono">
+              <span>2020 - 2022</span>
+              <span>&middot;</span>
+              <span>Widya Robotics</span>
+            </div>
+            <h3 class="text-lg font-bold text-txt group-hover:text-neon transition-colors duration-300 leading-snug">3D Point Cloud Processing Software</h3>
+            <p class="text-sm text-txtmuted leading-relaxed line-clamp-2">Advanced point cloud processing for crop, tree removal, cut & fill, and building simulation on LiDAR data with real-time visualization.</p>
+            <div class="flex items-center gap-2 pt-2">
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">PCL</span>
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">C++</span>
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">LiDAR</span>
+            </div>
+          </div>
+          <div class="hidden project-source">
+            <h2>3D Point Cloud Processing Software</h2>
+            <p>Point cloud processing software for cropping, tree removal, cut & fill analysis, and building simulation on 3D LiDAR data. Results visualized in real-time on a dashboard interface.</p>
+            <h3>Features</h3>
+            <ul>
+              <li>Crop and segment point cloud regions</li>
+              <li>Automatic tree/vegetation removal from terrain data</li>
+              <li>Cut and fill volume calculations for earthworks</li>
+              <li>Building simulation and overlay on point cloud</li>
+              <li>Real-time dashboard with Vue.js</li>
+            </ul>
+            <h3>Tech Stack</h3>
+            <p>ROS, PCL, Vue.js, Redis, MQTT, Modern C++, Python</p>
+          </div>
+        </article>
+
+        <!-- Project 4: Oped Quadruped -->
+        <article class="project-card group relative bg-dark-700 border border-dark-400 rounded-2xl overflow-hidden hover:border-cyan/40 transition-all duration-500 cursor-pointer" data-tags="hardware,navigation" onclick="openProject(this)">
+          <div class="relative overflow-hidden">
+            <img src="assets/images/projects/Oped Quadruped.JPG" alt="Oped Quadruped Robot" class="w-full h-56 object-contain bg-dark-600 group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-700 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 px-2.5 py-1 bg-orange-500/20 text-orange-400 text-[10px] font-mono font-bold uppercase rounded-md backdrop-blur-sm border border-orange-500/30">Hardware</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="flex items-center gap-3 text-xs text-txtmuted font-mono">
+              <span>2020</span>
+              <span>&middot;</span>
+              <span>Bachelor Thesis</span>
+            </div>
+            <h3 class="text-lg font-bold text-txt group-hover:text-cyan transition-colors duration-300 leading-snug">Oped - Quadruped Robot</h3>
+            <p class="text-sm text-txtmuted leading-relaxed line-clamp-2">Open-source mammal-type quadruped robot framework using Dynamixel servos. Full autonomous navigation with ROS and manual control.</p>
+            <div class="flex items-center gap-2 pt-2">
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">ROS</span>
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">C++</span>
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">SolidWorks</span>
+            </div>
+          </div>
+          <div class="hidden project-source">
+            <h2>Oped - Quadruped Robot</h2>
+            <p>Bachelor thesis project. OPED is an open-source development framework for mammal-type quadruped robot using Dynamixel AX-12/AX-18 series, based on the champ controller library.</p>
+            <h3>Capabilities</h3>
+            <ul>
+              <li>Manual and autonomous movement control</li>
+              <li>Full ROS navigation stack integration</li>
+              <li>12 DOF leg configuration with Dynamixel AX-12A</li>
+              <li>RPLIDAR A1M8 for environment mapping</li>
+            </ul>
+            <h3>Hardware</h3>
+            <p>Raspberry Pi 4, 12x Dynamixel AX-12A, RPLIDAR A1M8, U2D2</p>
+            <h3>Design</h3>
+            <p>Mechanical design in SolidWorks, PCB design in Autodesk Eagle, firmware in C++11 and Python on Ubuntu/ROS</p>
+            <p><a href="https://github.com/billynugrahas/oped_quadruped" target="_blank">View on GitHub &rarr;</a></p>
+          </div>
+        </article>
+
+        <!-- Project 5: Autonomous Service Robot -->
+        <article class="project-card group relative bg-dark-700 border border-dark-400 rounded-2xl overflow-hidden hover:border-neon/40 transition-all duration-500 cursor-pointer" data-tags="navigation,hardware" onclick="openProject(this)">
+          <div class="relative overflow-hidden">
+            <img src="assets/images/projects/Robot-covid.jpeg" alt="Autonomous Medical Supply Robot" class="w-full h-56 object-contain bg-dark-600 group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-700 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 px-2.5 py-1 bg-neon/20 text-neon text-[10px] font-mono font-bold uppercase rounded-md backdrop-blur-sm border border-neon/30">Navigation</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="flex items-center gap-3 text-xs text-txtmuted font-mono">
+              <span>2020</span>
+              <span>&middot;</span>
+              <span>UGM Research</span>
+            </div>
+            <h3 class="text-lg font-bold text-txt group-hover:text-neon transition-colors duration-300 leading-snug">Autonomous Medical Supply Robot</h3>
+            <p class="text-sm text-txtmuted leading-relaxed line-clamp-2">Contactless supply delivery robot for COVID-19 wards. Full ROS navigation stack with Vue.js operator interface.</p>
+            <div class="flex items-center gap-2 pt-2">
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">ROS</span>
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">SLAM</span>
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">Vue.js</span>
+            </div>
+          </div>
+          <div class="hidden project-source">
+            <h2>Autonomous Medical Supply Robot</h2>
+            <p>Developed for COVID-19 patient wards to enable contactless supply delivery, reducing healthcare worker exposure to the virus.</p>
+            <h3>Navigation Stack</h3>
+            <ul>
+              <li>SLAM: GMapping + Cartographer for mapping</li>
+              <li>Localization: AMCL</li>
+              <li>Global Planner: Dijkstra</li>
+              <li>Local Planner: TEB (Timed Elastic Band)</li>
+            </ul>
+            <h3>Hardware</h3>
+            <p>Raspberry Pi 4, BTS7960 Motor Driver, Arduino Due, DC Motor PG45 with Encoders</p>
+            <h3>Software</h3>
+            <p>ROS, Arduino, C++, Python with Vue.js operator interface for remote control and monitoring</p>
+          </div>
+        </article>
+
+        <!-- Project 6: Firefighting Hexapod -->
+        <article class="project-card group relative bg-dark-700 border border-dark-400 rounded-2xl overflow-hidden hover:border-cyan/40 transition-all duration-500 cursor-pointer" data-tags="hardware,competition" onclick="openProject(this)">
+          <div class="relative overflow-hidden">
+            <img src="assets/images/projects/Alfatih.PNG" alt="Al-Fatih Hexapod" class="w-full h-56 object-contain bg-dark-600 group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-700 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 px-2.5 py-1 bg-purple-500/20 text-purple-400 text-[10px] font-mono font-bold uppercase rounded-md backdrop-blur-sm border border-purple-500/30">Competition</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="flex items-center gap-3 text-xs text-txtmuted font-mono">
+              <span>2018</span>
+              <span>&middot;</span>
+              <span>UGM Robotics Team</span>
+            </div>
+            <h3 class="text-lg font-bold text-txt group-hover:text-cyan transition-colors duration-300 leading-snug">Al-Fatih - Firefighting Hexapod</h3>
+            <p class="text-sm text-txtmuted leading-relaxed line-clamp-2">Firefighting hexapod robot that autonomously navigates a maze to extinguish fires and rescue victims. Won national-level awards.</p>
+            <div class="flex items-center gap-2 pt-2">
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">Teensy</span>
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">Sensors</span>
+              <span class="px-2 py-0.5 rounded bg-dark-500 text-[10px] font-mono text-txtmuted">KRI</span>
+            </div>
+          </div>
+          <div class="hidden project-source">
+            <h2>Al-Fatih - Firefighting Hexapod Robot</h2>
+            <p>Firefighting hexapod robot designed to autonomously navigate a maze, extinguish fires, and rescue victims for the national KRI (Kontes Robot Indonesia) competition.</p>
+            <h3>Sensors & Actuators</h3>
+            <ul>
+              <li>Teensy 3.5 main controller</li>
+              <li>Ultrasonic sensors (SRF05) for maze navigation</li>
+              <li>IR distance sensors (Sharp GP) for proximity detection</li>
+              <li>Fire detection: UV-Tron and photodiode sensors</li>
+              <li>High-torque servos (HS-7955TG) for leg locomotion</li>
+            </ul>
+            <h3>Achievements</h3>
+            <ul>
+              <li>Best Strategy Award & 2nd Place - Regional Competition</li>
+              <li>4th Place - National Competition</li>
+            </ul>
+            <p><a href="https://gmrt.ugm.ac.id/robotic-team/tim-krpai/" target="_blank">UGM Robotics Team &rarr;</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <div id="projectModal" class="fixed inset-0 z-[60] hidden">
+    <div class="absolute inset-0 bg-dark-900/90 backdrop-blur-sm" onclick="closeProject()"></div>
+    <div class="relative h-full overflow-y-auto">
+      <div class="max-w-3xl mx-auto px-6 py-24">
+        <button onclick="closeProject()" class="fixed top-6 right-6 z-70 p-3 rounded-xl bg-dark-700 border border-dark-400 text-txtmuted hover:text-neon hover:border-neon transition-all duration-300">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div class="bg-dark-700 border border-dark-400 rounded-3xl overflow-hidden">
+          <div class="w-full bg-dark-600 flex items-center justify-center overflow-hidden" style="max-height:400px;">
+            <img id="projectModalImage" src="" alt="" class="w-full h-full object-cover">
+          </div>
+          <div class="p-8 md:p-12">
+            <div class="flex items-center gap-3 text-xs text-txtmuted font-mono mb-4">
+              <span id="projectModalMeta"></span>
+            </div>
+            <h1 id="projectModalTitle" class="text-2xl md:text-3xl font-bold text-txt leading-snug mb-6"></h1>
+            <div id="projectModalBody" class="project-modal-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="relative py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-xs font-mono text-cyan uppercase tracking-widest">// Career</span>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-3">Work <span class="text-neon">Experience</span></h2>
+        <p class="text-txtmuted mt-2 max-w-md mx-auto">From research labs to production deployments across continents.</p>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-4">
+        <!-- Experience 1 -->
+        <div class="group flex gap-4 items-start p-5 bg-dark-700 border border-dark-400 rounded-xl hover:border-neon/40 transition-all duration-500">
+          <div class="p-2.5 rounded-xl bg-neon/10 group-hover:bg-neon/20 transition-colors shrink-0">
+            <i data-lucide="rocket" class="w-5 h-5 text-neon"></i>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+              <h4 class="text-sm font-bold text-txt">Senior Robotics Application Engineer</h4>
+              <span class="text-xs font-mono text-neon">Aug 2022 - Present</span>
+            </div>
+            <p class="text-xs text-cyan font-medium mt-1">Movel AI &middot; Singapore</p>
+            <p class="text-xs text-txtmuted mt-2 leading-relaxed">Lead RNS development and client integration for 40+ robots across 18+ clients in 7+ countries (Poland, Turkey, India, Taiwan, Thailand, Singapore, Indonesia). Architected ROS 2 navigation stack with fleet management. 7+ robot platform types including autonomous forklifts, mecanum, swerve drive, and legged robots.</p>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="group flex gap-4 items-start p-5 bg-dark-700 border border-dark-400 rounded-xl hover:border-neon/40 transition-all duration-500">
+          <div class="p-2.5 rounded-xl bg-neon/10 group-hover:bg-neon/20 transition-colors shrink-0">
+            <i data-lucide="scan" class="w-5 h-5 text-neon"></i>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+              <h4 class="text-sm font-bold text-txt">Robotics Software Engineer - LiDAR</h4>
+              <span class="text-xs font-mono text-neon">Dec 2020 - Jul 2022</span>
+            </div>
+            <p class="text-xs text-neon font-medium mt-1">Widya Robotics &middot; Yogyakarta, Indonesia</p>
+            <p class="text-xs text-txtmuted mt-2 leading-relaxed">Developed Widya Load Scanner (industrial LiDAR measurement) and 3D point cloud processing pipeline. Owned full stack from sensor drivers to application output.</p>
+          </div>
+        </div>
+
+        <!-- Experience 4 -->
+        <div class="group flex gap-4 items-start p-5 bg-dark-700 border border-dark-400 rounded-xl hover:border-cyan/40 transition-all duration-500">
+          <div class="p-2.5 rounded-xl bg-cyan/10 group-hover:bg-cyan/20 transition-colors shrink-0">
+            <i data-lucide="wrench" class="w-5 h-5 text-cyan"></i>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+              <h4 class="text-sm font-bold text-txt">Robotics Engineer</h4>
+              <span class="text-xs font-mono text-cyan">Feb 2020 - Dec 2020</span>
+            </div>
+            <p class="text-xs text-cyan font-medium mt-1">Niagraha Tech &middot; Yogyakarta, Indonesia</p>
+            <p class="text-xs text-txtmuted mt-2 leading-relaxed">Designed and built low-cost educational AMR kits on ROS. SolidWorks mechanical design, firmware in C++ and Python.</p>
+          </div>
+        </div>
+
+        <!-- Experience 5 -->
+        <div class="group flex gap-4 items-start p-5 bg-dark-700 border border-dark-400 rounded-xl hover:border-neon/40 transition-all duration-500">
+          <div class="p-2.5 rounded-xl bg-neon/10 group-hover:bg-neon/20 transition-colors shrink-0">
+            <i data-lucide="graduation-cap" class="w-5 h-5 text-neon"></i>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+              <h4 class="text-sm font-bold text-txt">Robotics Research Assistant</h4>
+              <span class="text-xs font-mono text-neon">Mar 2020 - Nov 2020</span>
+            </div>
+            <p class="text-xs text-neon font-medium mt-1">Universitas Gadjah Mada &middot; Yogyakarta, Indonesia</p>
+            <p class="text-xs text-txtmuted mt-2 leading-relaxed">Developed Autonomous Medical Supply Robot for COVID-19 wards. Full ROS 1 navigation stack: SLAM, AMCL, Dijkstra, TEB.</p>
+          </div>
+        </div>
+
+        <!-- Experience 6 -->
+        <div class="group flex gap-4 items-start p-5 bg-dark-700 border border-dark-400 rounded-xl hover:border-cyan/40 transition-all duration-500">
+          <div class="p-2.5 rounded-xl bg-cyan/10 group-hover:bg-cyan/20 transition-colors shrink-0">
+            <i data-lucide="circuit-board" class="w-5 h-5 text-cyan"></i>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+              <h4 class="text-sm font-bold text-txt">R&D Engineer</h4>
+              <span class="text-xs font-mono text-cyan">Feb 2019 - Sep 2019</span>
+            </div>
+            <p class="text-xs text-cyan font-medium mt-1">Re-link Plastics</p>
+            <p class="text-xs text-txtmuted mt-2 leading-relaxed">Designed electronics and firmware for automated plastic sorting machine. STM32F407 with relay systems and electro-pneumatics.</p>
+          </div>
+        </div>
+
+        <!-- Experience 7 -->
+        <div class="group flex gap-4 items-start p-5 bg-dark-700 border border-dark-400 rounded-xl hover:border-neon/40 transition-all duration-500">
+          <div class="p-2.5 rounded-xl bg-neon/10 group-hover:bg-neon/20 transition-colors shrink-0">
+            <i data-lucide="cloud-rain" class="w-5 h-5 text-neon"></i>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+              <h4 class="text-sm font-bold text-txt">Instrumentation Engineer Intern</h4>
+              <span class="text-xs font-mono text-neon">Jan 2019 - Apr 2019</span>
+            </div>
+            <p class="text-xs text-neon font-medium mt-1">BMKG (Meteorology Agency)</p>
+            <p class="text-xs text-txtmuted mt-2 leading-relaxed">Developed ARMOS - Automatic Rain Water Sampling & Real-Time Monitoring System. PCB design in Eagle, ESP32 firmware.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="relative py-24">
+    <div class="absolute inset-0 bg-gradient-to-b from-dark-900 via-dark-800 to-dark-900"></div>
+    <div class="max-w-6xl mx-auto px-6 relative z-10">
+      <div class="text-center mb-16">
+        <span class="text-xs font-mono text-neon uppercase tracking-widest">// Tech Stack</span>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-3">Skills & <span class="text-cyan">Technologies</span></h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Languages -->
+        <div class="group bg-dark-700 border border-dark-400 rounded-2xl p-6 hover:border-neon/40 transition-all duration-500">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-2.5 rounded-xl bg-neon/10 group-hover:bg-neon/20 transition-colors">
+              <i data-lucide="code-2" class="w-5 h-5 text-neon"></i>
+            </div>
+            <h3 class="text-sm font-bold text-neon font-mono uppercase tracking-wider">Languages</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">C++</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">Python</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">JavaScript</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">C (Arduino)</span>
+          </div>
+        </div>
+
+        <!-- Robotics -->
+        <div class="group bg-dark-700 border border-dark-400 rounded-2xl p-6 hover:border-cyan/40 transition-all duration-500">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-2.5 rounded-xl bg-cyan/10 group-hover:bg-cyan/20 transition-colors">
+              <i data-lucide="bot" class="w-5 h-5 text-cyan"></i>
+            </div>
+            <h3 class="text-sm font-bold text-cyan font-mono uppercase tracking-wider">Robotics</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">ROS</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">ROS 2</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">Nav2</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">SLAM</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">AMCL</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">Gazebo</span>
+          </div>
+        </div>
+
+        <!-- Perception -->
+        <div class="group bg-dark-700 border border-dark-400 rounded-2xl p-6 hover:border-neon/40 transition-all duration-500">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-2.5 rounded-xl bg-neon/10 group-hover:bg-neon/20 transition-colors">
+              <i data-lucide="scan-eye" class="w-5 h-5 text-neon"></i>
+            </div>
+            <h3 class="text-sm font-bold text-neon font-mono uppercase tracking-wider">Perception</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">LiDAR</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">PCL</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">Sensor Fusion</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">IMU</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">Odometry</span>
+          </div>
+        </div>
+
+        <!-- Platforms -->
+        <div class="group bg-dark-700 border border-dark-400 rounded-2xl p-6 hover:border-cyan/40 transition-all duration-500">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-2.5 rounded-xl bg-cyan/10 group-hover:bg-cyan/20 transition-colors">
+              <i data-lucide="cog" class="w-5 h-5 text-cyan"></i>
+            </div>
+            <h3 class="text-sm font-bold text-cyan font-mono uppercase tracking-wider">Robot Platforms</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">AMR</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">Mecanum</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">Swerve</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">Legged</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">Forklift</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="group bg-dark-700 border border-dark-400 rounded-2xl p-6 hover:border-neon/40 transition-all duration-500">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-2.5 rounded-xl bg-neon/10 group-hover:bg-neon/20 transition-colors">
+              <i data-lucide="wrench" class="w-5 h-5 text-neon"></i>
+            </div>
+            <h3 class="text-sm font-bold text-neon font-mono uppercase tracking-wider">Tools & DevOps</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">Docker</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">Git</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">CI/CD</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">JIRA</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">SolidWorks</span>
+          </div>
+        </div>
+
+        <!-- Protocols -->
+        <div class="group bg-dark-700 border border-dark-400 rounded-2xl p-6 hover:border-cyan/40 transition-all duration-500">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-2.5 rounded-xl bg-cyan/10 group-hover:bg-cyan/20 transition-colors">
+              <i data-lucide="network" class="w-5 h-5 text-cyan"></i>
+            </div>
+            <h3 class="text-sm font-bold text-cyan font-mono uppercase tracking-wider">Integration</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">MQTT</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">Serial</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">I2C</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">PLC</span>
+            <span class="px-3 py-1.5 rounded-lg bg-dark-500 text-xs font-mono text-txt border border-dark-400">TF/TF2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="relative py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <span class="text-xs font-mono text-neon uppercase tracking-widest">// Get In Touch</span>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-3">Let's <span class="text-cyan">Connect</span></h2>
+        <p class="text-txtmuted mt-3 max-w-md mx-auto">Whether you have a robotics project, collaboration opportunity, or just want to chat about autonomous systems.</p>
+      </div>
+
+      <div class="max-w-2xl mx-auto grid sm:grid-cols-2 gap-4">
+        <a href="mailto:billy.nugraha.s@gmail.com" class="flex items-center gap-4 p-5 bg-dark-700 border border-dark-400 rounded-xl hover:border-neon/40 transition-all duration-300 group">
+          <div class="p-2.5 rounded-xl bg-neon/10 group-hover:bg-neon/20 transition-colors">
+            <i data-lucide="mail" class="w-5 h-5 text-neon"></i>
+          </div>
+          <div>
+            <div class="text-xs text-txtmuted font-mono">Email</div>
+            <div class="text-sm text-txt font-medium">billy.nugraha.s@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/billy-nugraha-s/" target="_blank" class="flex items-center gap-4 p-5 bg-dark-700 border border-dark-400 rounded-xl hover:border-cyan/40 transition-all duration-300 group">
+          <div class="p-2.5 rounded-xl bg-cyan/10 group-hover:bg-cyan/20 transition-colors">
+            <i data-lucide="linkedin" class="w-5 h-5 text-cyan"></i>
+          </div>
+          <div>
+            <div class="text-xs text-txtmuted font-mono">LinkedIn</div>
+            <div class="text-sm text-txt font-medium">billy-nugraha-s</div>
+          </div>
+        </a>
+        <a href="https://github.com/billynugrahas" target="_blank" class="flex items-center gap-4 p-5 bg-dark-700 border border-dark-400 rounded-xl hover:border-neon/40 transition-all duration-300 group">
+          <div class="p-2.5 rounded-xl bg-neon/10 group-hover:bg-neon/20 transition-colors">
+            <i data-lucide="github" class="w-5 h-5 text-neon"></i>
+          </div>
+          <div>
+            <div class="text-xs text-txtmuted font-mono">GitHub</div>
+            <div class="text-sm text-txt font-medium">billynugrahas</div>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/billynugrahas/" target="_blank" class="flex items-center gap-4 p-5 bg-dark-700 border border-dark-400 rounded-xl hover:border-cyan/40 transition-all duration-300 group">
+          <div class="p-2.5 rounded-xl bg-cyan/10 group-hover:bg-cyan/20 transition-colors">
+            <i data-lucide="instagram" class="w-5 h-5 text-cyan"></i>
+          </div>
+          <div>
+            <div class="text-xs text-txtmuted font-mono">Instagram</div>
+            <div class="text-sm text-txt font-medium">billynugrahas</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="relative border-t border-dark-400">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 rounded-lg bg-neon flex items-center justify-center">
+            <i data-lucide="terminal" class="w-3.5 h-3.5 text-dark-900" style="stroke-width:2.5"></i>
+          </div>
+          <span class="text-sm font-bold tracking-tight">billynugrahas<span class="text-neon">.github.io</span></span>
+        </div>
+        <p class="text-xs font-mono text-txtmuted">&copy; <span id="footerYear"></span> Billy Nugraha Sutandi. Built with caffeine and curiosity.</p>
+        <div class="flex items-center gap-1 text-xs font-mono text-txtmuted">
+          <span class="w-2 h-2 rounded-full bg-neon animate-pulse"></span>
+          <span>All systems operational</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    lucide.createIcons();
+
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+    // Typing Effect
+    const typedEl = document.getElementById('typed-text');
+    const phrases = [
+      'autonomous navigation systems.',
+      'ROS/ROS 2 applications.',
+      'LiDAR point cloud pipelines.',
+      'robot fleet management.',
+      'SLAM and localization.',
+      'production robot deployments.'
+    ];
+    let phraseIdx = 0, charIdx = 0, isDeleting = false;
+
+    function typeEffect() {
+      const current = phrases[phraseIdx];
+      if (isDeleting) {
+        typedEl.textContent = current.substring(0, charIdx - 1);
+        charIdx--;
+      } else {
+        typedEl.textContent = current.substring(0, charIdx + 1);
+        charIdx++;
+      }
+      let delay = isDeleting ? 40 : 80;
+
+      if (!isDeleting && charIdx === current.length) {
+        delay = 2000;
+        isDeleting = true;
+      } else if (isDeleting && charIdx === 0) {
+        isDeleting = false;
+        phraseIdx = (phraseIdx + 1) % phrases.length;
+        delay = 300;
+      }
+      setTimeout(typeEffect, delay);
+    }
+    typeEffect();
+
+    // Mobile Menu
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    let menuOpen = false;
+    mobileMenuBtn.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      mobileMenu.classList.toggle('hidden', !menuOpen);
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        menuOpen = false;
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Tag Filter
+    const tagBtns = document.querySelectorAll('.tag-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    tagBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tagBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const tag = btn.dataset.tag;
+
+        projectCards.forEach(card => {
+          const tags = card.dataset.tags.split(',');
+          const show = tag === 'all' || tags.includes(tag);
+          card.style.display = show ? '' : 'none';
+          if (show) {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            requestAnimationFrame(() => {
+              card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            });
+          }
+        });
+      });
+    });
+
+    // Project Modal
+    const projectModal = document.getElementById('projectModal');
+
+    function openProject(card) {
+      const img = card.querySelector('img');
+      const title = card.querySelector('h3').textContent;
+      const meta = card.querySelector('.font-mono');
+      const source = card.querySelector('.project-source').innerHTML;
+
+      const modalImg = document.getElementById('projectModalImage');
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+      document.getElementById('projectModalTitle').textContent = title;
+      document.getElementById('projectModalMeta').textContent = meta ? meta.textContent : '';
+      document.getElementById('projectModalBody').innerHTML = source;
+
+      projectModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function closeProject() {
+      projectModal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeProject();
+    });
+
+    // Scroll Navbar
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        navbar.style.borderBottom = '1px solid rgba(51,51,51,0.6)';
+      } else {
+        navbar.style.borderBottom = 'none';
+      }
+    });
+
+    // Intersection Observer
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.project-card, #experience .group, #skills .group').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+  </script>
 </body>
-</html> 
+</html>
